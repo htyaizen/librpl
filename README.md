@@ -1,18 +1,17 @@
-# A RPL implementation for Linux derived from the Contiki RPL implementation.
+# 来自Contiki RPL实现的Linux的RPL实现。
 
-This library is unlike the Contiki RPL implementation supposed to run
-on the host computer; not on the microcontroller. It is supposed to
-work with the 6LoWPAN Linux kernel implementation.
+这个库不像应用于运行的Contiki RPL实现在主机，也不在微控制器上。应该是
+使用6LoWPAN Linux内核实现。
 
-## Compile instructions:
+## 编译说明:
 
 make
 sudo LD_LIBRARY_PATH=. ./examples/rpl-root-node -i lowpan0 -s ::1
 
 ## Status:
-* Compiles.
-* Sends DIOs on the specified interface.
+* 编译
+* 在指定的接口上发送DIO.
 
 ## TODOs:
-* Accept and interprete DAOs.
-* Set routes using netlink, libnl or 'ip route'.
+*接受和插入DAO。
+*使用netlink，libnl或'ip route'设置路由。
